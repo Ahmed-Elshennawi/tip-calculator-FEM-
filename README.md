@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://ahmed-elshennawi.github.io/tip-calculator-FEM-/
+- Live Site URL: (https://ahmed-elshennawi.github.io/tip-calculator-FEM-/
 
 ## My process
 
