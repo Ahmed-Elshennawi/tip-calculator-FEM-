@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <img src="images/logo.svg" alt="splitter logo" class="logo" />
+
+    <main>
+      <section class="inputSec">
+        <div class="billBox">
+          <h2>Bill</h2>
+
+          <div class="billWrapper">
+            <img src="images/icon-dollar.svg" alt="input the bill" />
+            <input type="number" min="0" placeholder="0" class="billInput" />
+          </div>
+        </div>
+
+        <div class="selectBtns">
+          <h2>Select Tip %</h2>
+
+          <div class="btnsWrapper">
+            <button class="fivePer"><span>5</span>%</button>
+            <button class="tenPer"><span>10</span>%</button>
+            <button class="fifhteenPer"><span>15</span>%</button>
+            <button class="tweentyfivePer"><span>25</span>%</button>
+            <button class="fiftyPer"><span>50</span>%</button>
+            <input
+              type="number"
+              min="0"
+              placeholder="Custom"
+              class="customPer"
+            />
+          </div>
+        </div>
+
+        <div class="peopleBox">
+          <h2>Number of People</h2>
+
+          <div class="peopleWrapper">
+            <img
+              src="images/icon-person.svg"
+              alt="input the number of people"
+            />
+            <input type="number" min="1" placeholder="0" class="peopleInput" />
+          </div>
+        </div>
+      </section>
+
+      <section class="outputSec">
+        <div class="tipBox">
+          <div class="boxText">
+            <h3>Tip Amount</h3>
+            <p>/ person</p>
+          </div>
+
+          <div class="tipMoney">$<span>0.00</span></div>
+        </div>
+
+        <div class="totalBox">
+          <div class="boxText">
+            <h3>Total</h3>
+            <p>/ person</p>
+          </div>
+
+          <div class="totalMoney">$<span>0.00</span></div>
+        </div>
+
+        <button class="reset">RESET</button>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/Ahmed-Elshennawi">Ahmed Elshennawi</a>.
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

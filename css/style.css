@@ -1,0 +1,284 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  padding: 0px 20px;
+  font-family: "Space Mono", monospace;
+  background-color: hsl(185, 41%, 84%);
+}
+
+button,
+input {
+  font-family: "Space Mono", monospace;
+}
+
+/* removing the spinner of the number input field */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.logo {
+  display: block;
+  width: 65px;
+  margin: 125px auto 65px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1.075fr;
+  column-gap: 35px;
+  width: 100%;
+  max-width: 705px;
+  margin: 0 auto;
+  padding: 24px 24px 24px 35px;
+  border-radius: 20px;
+  box-shadow: hsla(0, 0%, 0%, 0.1) 0px 10px 15px -3px,
+    hsla(0, 0%, 0%, 0.05) 0px 4px 6px -2px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.inputSec {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.billBox {
+  margin-bottom: 30px;
+}
+
+.inputSec h2 {
+  font-size: 12.25px;
+  font-weight: 700;
+  color: hsl(186, 14%, 43%);
+}
+
+.billBox h2,
+.peopleBox h2 {
+  margin-bottom: 5px;
+}
+
+.billWrapper,
+.peopleWrapper {
+  position: relative;
+}
+
+.billWrapper img,
+.peopleWrapper img {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.billWrapper img {
+  width: 9px;
+}
+
+.peopleWrapper img {
+  width: 10px;
+}
+
+.billInput,
+.peopleInput {
+  width: 100%;
+  padding: 5px 15px 5px 25px;
+  border: none;
+  border-radius: 3px;
+  font-size: 18.5px;
+  font-weight: 700;
+  text-align: right;
+  color: hsl(181, 54%, 19%);
+  background-color: hsl(202, 50%, 97%);
+}
+
+.billInput::placeholder,
+.peopleInput::placeholder {
+  color: hsl(186, 14%, 43%);
+}
+
+.billInput:focus,
+.peopleInput:focus {
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+
+.billInput.unvalid,
+.peopleInput.unvalid {
+  outline: 2px solid hsl(12, 45%, 56%);
+}
+
+.selectBtns {
+  margin-bottom: 32px;
+}
+
+.selectBtns h2 {
+  margin-bottom: 12px;
+}
+
+.btnsWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12.5px 10px;
+}
+
+.btnsWrapper button {
+  padding: 4.5px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18.5px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(183, 100%, 15%);
+  cursor: pointer;
+}
+
+.btnsWrapper button:active {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+}
+
+.customPer {
+  width: 100%;
+  padding: 0 11px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 18.5px;
+  text-align: right;
+  color: hsl(181, 54%, 19%);
+  background-color: hsl(210, 50%, 97%);
+}
+
+.customPer::placeholder {
+  color: hsl(180, 41%, 11%);
+}
+
+.customPer:focus {
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+
+.outputSec {
+  display: flex;
+  flex-direction: column;
+  padding: 33px 29px 29px;
+  border-radius: 12.5px;
+  background-color: hsl(183, 100%, 15%);
+}
+
+.tipBox {
+  margin-bottom: 17.5px;
+}
+
+.tipBox,
+.totalBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.outputSec h3 {
+  font-size: 11.5px;
+  color: hsl(196, 60%, 95%);
+}
+
+.outputSec p {
+  font-size: 10px;
+  font-weight: 700;
+  color: hsl(185, 22%, 52%);
+}
+
+.tipMoney,
+.totalMoney {
+  font-size: 37.5px;
+  font-weight: 700;
+  color: hsl(174, 52%, 47%);
+}
+
+.reset {
+  margin-top: auto;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14.75px;
+  font-weight: 700;
+  color: hsl(183, 94%, 20%);
+  background-color: hsl(183, 79%, 24%);
+  cursor: pointer;
+}
+
+.reset:active {
+  background-color: #26c2ad;
+}
+
+.attribution {
+  margin: 20px 0 20px 0;
+  font-size: 14px;
+  color: hsl(183, 100%, 15%);
+  text-align: center;
+}
+
+/* Responive (Media Queries) */
+@media (max-width: 900px) {
+  body {
+    padding: 0;
+    overflow: visible;
+  }
+
+  .logo {
+    width: 75px;
+    margin: 40px auto;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    padding: 28px 20px;
+  }
+
+  .inputSec {
+    padding: 0px 5px 26px;
+  }
+
+  .inputSec h2 {
+    font-size: 12.5px;
+  }
+
+  .btnsWrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px 15px;
+  }
+
+  .outputSec {
+    padding: 28px 18px 20px;
+  }
+
+  .outputSec h3 {
+    font-size: 13px;
+  }
+
+  .outputSec p {
+    font-size: 11px;
+  }
+
+  .tipMoney,
+  .totalMoney {
+    font-size: 28px;
+  }
+
+  .reset {
+    margin-top: 27.5px;
+  }
+}
