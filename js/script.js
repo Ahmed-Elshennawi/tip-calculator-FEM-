@@ -7,8 +7,10 @@ let tipMoney = document.querySelector(".tipMoney span");
 let totalMoney = document.querySelector(".totalMoney span");
 let resetBtn = document.querySelector(".reset");
 
+
 btnsWrapper.addEventListener("click", calcBtn);
 customInput.addEventListener("input", calcCustom);
+resetBtn.addEventListener("click", reset)
 
 function checkValid() {
   if (billInput.value > 0 && peopleInput.value > 0) {
@@ -60,3 +62,12 @@ function calcCustom() {
     calcMoney("event", Number(customInput.value));
   }
 }
+
+
+function reset() {
+	billInput.value = "";
+	peopleInput.value = "";
+	tipMoney.textContent = "0.00";
+	totalMoney.textContent = "0.00"
+}
+
